@@ -217,6 +217,8 @@ const styles = StyleSheet.create({
 | `onCanUndoChanged` | `(event: NativeEvent<CanUndoChangedEvent>) => void` | Called when undo state changes   |
 | `onCanRedoChanged` | `(event: NativeEvent<CanRedoChangedEvent>) => void` | Called when redo state changes   |
 
+_Note:_ When using `imagePath` with local assets, such as those served from `./assets/` using `require()`, the asset source must be resolved using [`resolveAssetSource()`](https://reactnative.dev/docs/image#resolveassetsource) before passing the URI to the prop. 
+
 #### Ref Methods
 
 | Method                     | Parameters        | Return Type        | Description                             |
